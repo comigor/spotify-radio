@@ -12,7 +12,7 @@ sleep 2
 # pacmd load-module module-pipe-sink file=/audio/stream format=s16 rate=8192 channels=1
 
 echo 'Starting spotifyd...'
-su - user -c 'spotifyd'
+su - user -c "spotifyd --username $SPOTIFY_USERNAME --password $SPOTIFY_PASSWORD"
 sleep 2
 
 # socat file:/audio/stream tcp-listen:12345

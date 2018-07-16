@@ -33,5 +33,7 @@ ADD spotifyd.conf /home/user/.config/spotifyd/spotifyd.conf
 
 USER root
 
+EXPOSE 8000
+
 ENTRYPOINT [ "/bin/start.sh" ]
 # ENTRYPOINT [ "pulseaudio" "-D" "--exit-idle-time=-1" "&&" "pacmd" "load-module" "module-pipe-sink" "file=/dev/audio/stream" "format=s16" "rate=44100" "channels=2" "&&" "socat" "file:/dev/audio/stream" "tcp-listen:12345" ]
