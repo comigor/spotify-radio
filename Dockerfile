@@ -2,7 +2,6 @@ FROM ubuntu
 RUN apt-get update && apt-get -y install pulseaudio alsa-utils darkice icecast2
 
 RUN sed "s/^load-module module-console-kit/#load-module module-console-kit/" -i /etc/pulse/default.pa \
-    && echo "load-module module-native-protocol-tcp auth-anonymous=1" >> /etc/pulse/default.pa \
     && sed "s/ENABLE=false/ENABLE=true/" -i /etc/default/icecast2 \
     && sed "s/hackme/prettybigpasswordthatnoonewouldguess/g" -i /etc/icecast2/icecast.xml \
     && sed "s/8000/20300/" -i /etc/icecast2/icecast.xml \
