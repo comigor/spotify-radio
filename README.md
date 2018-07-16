@@ -14,6 +14,8 @@ It uses the excellent [spotifyd](https://github.com/Spotifyd/spotifyd).
 docker run --name spotify -p 20300:20300 -e "SPOTIFY_USERNAME=$USERNAME" -e "SPOTIFY_PASSWORD=$PASS" borges/spotify-radio
 ```
 
+Then connect to the stream via `http://my.ip.address:20300/spotify`.
+
 ## Why?
 
 Spotify has an electron app that consumes gigabytes of RAM. I miss the time I used around 100MB at max to do the same.
