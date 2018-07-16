@@ -18,9 +18,9 @@ Then connect to the stream via `http://my.ip.address:20300/spotify`.
 
 ## Why?
 
-Spotify has an electron app that consumes gigabytes of RAM. I miss the time I used around 100MB at max to do the same.
+Spotify has an electron app that consumes gigabytes of RAM. I miss the time I used around 100MB to do the same.
 
-So I've been looking for alternatives. Spotifyd came to the rescue but every time my computer went to sleep I had to restart it and recconect to my Daemon device on Spotify. So I've come up with the idea of dockerize it and let it live on my server, and I choose Icecast to stream it to my machine.
+So I've been looking for alternatives. Spotifyd came to the rescue but every time my computer went to sleep I had to restart it and reconnect to my Daemon device on Spotify. So I've come up with the idea of dockerize it and let it live on my server, and I chose Icecast to stream it to my machine.
 
 ## Legal
 Spotify Radio in licensed under MIT.
