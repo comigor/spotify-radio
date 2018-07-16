@@ -8,6 +8,12 @@ A docker image that creates a new device on Spotify (called "Daemon"), which str
 
 It uses the excellent [spotifyd](https://github.com/Spotifyd/spotifyd).
 
+## How?
+
+```
+docker run --name spotify -p 20300:20300 -e "SPOTIFY_USERNAME=$USERNAME" -e "SPOTIFY_PASSWORD=$PASS" borges/spotify-radio
+```
+
 ## Why?
 
 Spotify has an electron app that consumes gigabytes of RAM. I miss the time I used around 100MB at max to do the same.
